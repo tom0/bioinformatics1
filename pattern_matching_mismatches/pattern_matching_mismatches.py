@@ -33,9 +33,6 @@ def pattern_matching_mismatches_copy_pseudocode(text, k, d):
     return frequent_patterns
 
 
-
-    pass
-
 def pattern_matching_mismatches(text, k, d):
     counts = defaultdict(int)
     max_count = 0
@@ -44,7 +41,7 @@ def pattern_matching_mismatches(text, k, d):
         ns = neighbours(kmer, d)
         for n in ns:
             counts[n] += 1
-            if (counts[n] > max_count):
+            if counts[n] > max_count:
                 max_count = counts[n]
 
     most_frequent = []
