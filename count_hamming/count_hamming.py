@@ -14,6 +14,6 @@ def count_hamming(pattern, text, d):
 if __name__ == '__main__':
     import sys
 
-    p, t, d = sys.arg[1], sys.argv[2], sys.argv[3]
+    p, t, d = sys.argv[1], sys.argv[2], int(sys.argv[3])
     print(count_hamming(p, t, d))
 

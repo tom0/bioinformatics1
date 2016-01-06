@@ -21,4 +21,4 @@ def neighbours(pattern, d):
     return neighbourhood
 
 if __name__ == '__main__':
-    print('\n'.join(neighbours('GATCTACTA', 3)))
+    print(len(neighbours('CCAGTCAATG', 1)))
