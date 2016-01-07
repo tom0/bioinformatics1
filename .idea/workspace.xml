@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b84453bb-bb10-409f-a981-382f942b974b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/greedy_motif_search/greedy_motif_search.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/profile_most_probable/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/greedy_motif_search/greedy_motif_search_pseudocounts.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile_most_probable/profile_most_probable.py" afterPath="$PROJECT_DIR$/profile_most_probable/profile_most_probable.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/greedy_motif_search/greedy_motif_search.py" afterPath="$PROJECT_DIR$/greedy_motif_search/greedy_motif_search.py" />
     </list>
     <ignored path="bioinformatics1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,18 +40,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="distance_between_pattern_and_strings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/distance_between_pattern_and_strings/distance_between_pattern_and_strings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="median_string.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/median_string/median_string.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -73,14 +60,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="greedy_motif_search.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="greedy_motif_search.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/greedy_motif_search/greedy_motif_search.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7413793">
-              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="greedy_motif_search_pseudocounts.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/greedy_motif_search/greedy_motif_search_pseudocounts.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/greedy_motif_search/data.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -171,8 +176,9 @@
         <option value="$PROJECT_DIR$/profile_most_probable/__init__.py" />
         <option value="$PROJECT_DIR$/profile_most_probable/profile_most_probable.py" />
         <option value="$PROJECT_DIR$/profile_most_probable/data.txt" />
-        <option value="$PROJECT_DIR$/greedy_motif_search/data.txt" />
         <option value="$PROJECT_DIR$/greedy_motif_search/greedy_motif_search.py" />
+        <option value="$PROJECT_DIR$/greedy_motif_search/greedy_motif_search_pseudocounts.py" />
+        <option value="$PROJECT_DIR$/greedy_motif_search/data.txt" />
       </list>
     </option>
   </component>
@@ -285,25 +291,7 @@
       <recent name="$PROJECT_DIR$/clump_finding" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.greedy_motif_search">
-    <configuration default="false" name="motif_enumeration" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/motif_enumeration" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="bioinformatics1" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/motif_enumeration/motif_enumeration.py" />
-      <option name="PARAMETERS" value="5 1 GAGCCCATCTTATCTACGGGCAGTT CTTCGGAGACCGGAAAGCTTACAGG GCGAACAATAACGGGGCCTGCGAAG CCTAAATTCCAATGGACTGGTCGTC ACCGGCTGCTGTTTTGGACAGGATA CCTAAACCCAAAGTGACCCTACAGG" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.greedy_motif_search_pseudocounts">
     <configuration default="false" name="distance_between_pattern_and_strings" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -373,6 +361,24 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/greedy_motif_search/greedy_motif_search.py" />
       <option name="PARAMETERS" value="./data.txt" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="greedy_motif_search_pseudocounts" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/greedy_motif_search" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="bioinformatics1" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/greedy_motif_search/greedy_motif_search_pseudocounts.py" />
+      <option name="PARAMETERS" value="data.txt" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
@@ -505,19 +511,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.motif_enumeration" />
-      <item index="1" class="java.lang.String" itemvalue="Python.distance_between_pattern_and_strings" />
-      <item index="2" class="java.lang.String" itemvalue="Python.median_string" />
-      <item index="3" class="java.lang.String" itemvalue="Python.profile_most_probable" />
-      <item index="4" class="java.lang.String" itemvalue="Python.greedy_motif_search" />
+      <item index="0" class="java.lang.String" itemvalue="Python.distance_between_pattern_and_strings" />
+      <item index="1" class="java.lang.String" itemvalue="Python.median_string" />
+      <item index="2" class="java.lang.String" itemvalue="Python.profile_most_probable" />
+      <item index="3" class="java.lang.String" itemvalue="Python.greedy_motif_search" />
+      <item index="4" class="java.lang.String" itemvalue="Python.greedy_motif_search_pseudocounts" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.greedy_motif_search" />
-        <item index="1" class="java.lang.String" itemvalue="Python.profile_most_probable" />
-        <item index="2" class="java.lang.String" itemvalue="Python.median_string" />
-        <item index="3" class="java.lang.String" itemvalue="Python.distance_between_pattern_and_strings" />
-        <item index="4" class="java.lang.String" itemvalue="Python.motif_enumeration" />
+        <item index="0" class="java.lang.String" itemvalue="Python.greedy_motif_search_pseudocounts" />
+        <item index="1" class="java.lang.String" itemvalue="Python.greedy_motif_search" />
+        <item index="2" class="java.lang.String" itemvalue="Python.profile_most_probable" />
+        <item index="3" class="java.lang.String" itemvalue="Python.median_string" />
+        <item index="4" class="java.lang.String" itemvalue="Python.distance_between_pattern_and_strings" />
       </list>
     </recent_temporary>
   </component>
@@ -549,15 +555,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="743" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36899224" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16105418" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44363105" sideWeight="0.49707174" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34846267" sideWeight="0.49707174" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32713178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23565891" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.75503874" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.50292826" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32868218" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -713,34 +719,29 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/greedy_motif_search/greedy_motif_search.py</url>
-          <line>54</line>
+          <line>53</line>
           <option name="timeStamp" value="86" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <condition expression="kmer == 'GTGCGT'" language="Python" />
           <url>file://$PROJECT_DIR$/greedy_motif_search/greedy_motif_search.py</url>
-          <line>38</line>
+          <line>37</line>
           <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/greedy_motif_search/greedy_motif_search_pseudocounts.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="94" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="90" />
+      <option name="time" value="95" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/count_hamming/count_hamming.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#37#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hamming_distance/hamming_distance.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1114,11 +1115,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/greedy_motif_search/greedy_motif_search.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7413793">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/greedy_motif_search/greedy_motif_search_pseudocounts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/greedy_motif_search/data.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

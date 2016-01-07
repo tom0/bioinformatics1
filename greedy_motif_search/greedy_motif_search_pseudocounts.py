@@ -1,7 +1,7 @@
 from profile_most_probable.profile_most_probable import profile_most_probable
 
 
-def get_profile_and_score(motifs):
+def get_profile_and_score(motifs, succession):
     nucleotides = {'A': 0, 'C': 1, 'G': 2, 'T': 3}
     profile = []
     score = None
@@ -26,7 +26,7 @@ def get_profile_and_score(motifs):
                 else:
                     score += count
 
-        profile.append([c / float(height) for c in counts])
+        profile.append([c+1 / float(height+succession) for c in counts])
     return profile, score
 
 
@@ -37,10 +37,12 @@ def greedy_motif_search(dna_strings, k, t):
         kmer = dna_strings[0][i:i + k]
         motifs = [kmer]
         score = 0
+        succession = 0
         for i in range(1, t):
-            profile, score = get_profile_and_score(motifs)
+            profile, score = get_profile_and_score(motifs, succession)
             most_probable_kmer = profile_most_probable(dna_strings[i], k, profile)
             motifs.append(most_probable_kmer)
+            succession += 1
         if best_score is None and score is not None:
             best_score = score
             best_motifs = motifs
