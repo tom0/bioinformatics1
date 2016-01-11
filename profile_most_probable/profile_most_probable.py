@@ -6,6 +6,10 @@ def _calc_kmer_prob(kmer, profile):
     return result
 
 
+def profile_most_probable_motifs(dna_strings, k, profile):
+    return [profile_most_probable(dna, k, profile) for dna in dna_strings]
+
+
 def profile_most_probable(text, k, profile):
     max_prob = None
     max_prob_kmer = None
