@@ -1,4 +1,4 @@
-def _calc_kmer_prob(kmer, profile):
+def calc_kmer_prob(kmer, profile):
     nucleotides = ['A', 'C', 'G', 'T']
     result = 1
     for i, c in enumerate(kmer):
@@ -15,7 +15,7 @@ def profile_most_probable(text, k, profile):
     max_prob_kmer = None
     for i in xrange(len(text) - (k - 1)):
         kmer = text[i:i + k]
-        prob = _calc_kmer_prob(kmer, profile)
+        prob = calc_kmer_prob(kmer, profile)
         if max_prob is None or prob > max_prob:
             max_prob = prob
             max_prob_kmer = kmer

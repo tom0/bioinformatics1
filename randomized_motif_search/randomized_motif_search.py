@@ -57,13 +57,16 @@ def randomized_motif_search_score_bound(dna_strings, k, t, max_score):
 
 
 def randomized_motif_search_n_times(dna_strings, k, t, n):
-    counts = defaultdict(int)
+    min_score = None
+    best_motifs = []
     for i in range(n):
         motifs, score = randomized_motif_search(dna_strings, k, t)
-        key = " ".join(motifs)
-        counts[key] += 1
-    sorted_counts = sorted(counts.items(), key=itemgetter(1), reverse=True)
-    return sorted_counts[0][0].split()
+        if min_score is None or score < min_score:
+            best_motifs = motifs
+            min_score = score
+
+    print(min_score)
+    return best_motifs
 
 
 if __name__ == '__main__':
@@ -77,4 +80,4 @@ if __name__ == '__main__':
     t = int(k_t[1])
     dna_strings = [file_lines[i+1].strip() for i in range(t)]
 
-    print('\n'.join([str(x) for x in randomized_motif_search_score_bound(dna_strings, k, t, 70)]))
+    print('\n'.join([str(x) for x in randomized_motif_search_score_bound(dna_strings, k, t, 62)]))
